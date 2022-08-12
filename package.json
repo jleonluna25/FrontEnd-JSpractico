@@ -1,0 +1,15 @@
+{
+  "name": "frontendpractico",
+  "version": "1.0.0",
+  "description": "Maquetacion de proyecto con HTML y CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS"
+  ],
+  "author": "Jesus Luna jesusleonluna13@gmail.com",
+  "license": "MIT"
+}
