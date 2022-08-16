@@ -18,8 +18,11 @@ nav {
     padding: 0 24px;
     border-bottom: 1px solid var(--very-light-pink);
 }
+
+/*Navbar (izq y der)*/
 .menu {
     display: none;
+    cursor: pointer;
 }
 .logo {
     width: 100px;
@@ -76,6 +79,7 @@ nav {
     align-items: center;
 }
 
+/*Menú desktop*/
 .desktop-menu {
     width: 100px;
     height: auto;
@@ -83,8 +87,8 @@ nav {
     border-radius: 6px;
     padding: 20px 20px 0 20px;
     position: absolute;
-    top: 60px;
-    right: 12px;
+    top: 50px;
+    right: 50px;
     background-color: var(--white);
 }
 .desktop-menu ul {
@@ -113,6 +117,51 @@ nav {
     margin-bottom: 20px;
 }
 
+/*CSS para menú móvil*/
+.mobile-menu {
+    padding: 24px;
+    position: absolute;
+    top: 61px;
+}
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+}
+.mobile-menu ul {
+    padding: 0;
+    margin: 24px 0 0;
+    list-style: none;
+}
+.mobile-menu ul:nth-child(1){
+    border-bottom: 1px solid var(--very-light-pink);
+}
+.mobile-menu ul:last-child {
+    position: absolute;
+}
+.mobile-menu ul li {
+    margin-bottom: 24px;
+}
+.mobile-menu .email {
+    font-size: var(--sm);
+    font-weight: 300;
+}
+.mobile-menu .sign-out {
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}
+
+.oculto {
+    left: -200px;
+    transform: translateX(-200px);
+    transition: transform 300ms;
+}
+
+.activo {
+    transform: translateX(200px);
+    transition: transform 300ms;
+}
+
 .inactive {
     display: none;
 }
@@ -125,6 +174,14 @@ nav {
         display: none;
     }
     .navbar-email {
+        display: none;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
+@media (min-width:640px){
+    .mobile-menu {
         display: none;
     }
 }
